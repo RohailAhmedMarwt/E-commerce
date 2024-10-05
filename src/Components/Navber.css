@@ -1,0 +1,108 @@
+/* Import Laxend Deca font */
+@import url('https://fonts.googleapis.com/css2?family=Laxend+Deca:wght@400;700&display=swap');
+
+/* Apply font family globally */
+body, .navbar-nav, .btn-custom, .icon {
+  font-family: 'Laxend Deca', sans-serif;
+}
+
+/* Style for the custom buttons */
+.btn-custom {
+  font-size: 14.3px;
+  background-color: #ffd700;
+  width: 110px;
+  font-weight: 550;
+  border: 1px solid gold;
+  transition: background-color 0.8s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for custom buttons */
+.btn-custom:hover {
+  background-color: darkgoldenrod;
+  border-color: rgb(2, 2, 2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.04);
+}
+
+/* Center the navigation items */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Space between nav items */
+.navbar-nav .nav-item {
+  margin: 0 11px;
+}
+
+/* Styling for nav links */
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: gold;
+  font-weight: bold;
+  transform: translateY(-5px);
+}
+
+/* Hover effect underline for nav links */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: gold;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+/* Expand underline on hover */
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Style for the icon container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 13px; /* Space between icons */
+}
+
+/* Style for each icon */
+.icon {
+  color: #333;
+  font-size: 22px; /* Ensure consistent size for all icons */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+.icon:hover {
+  color: gold;
+  transform: scale(1.2);
+}
+.iicon {
+  color: #333;
+  font-size: 20px; /* Ensure consistent size for all icons */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+.iicon:hover {
+  color: gold;
+  transform: scale(1.2);
+}
+
+/* Ensure uniform size for search icon */
+.search-icon-container {
+  font-size: 18px; /* Match the size of other icons */
+  margin-top: 4px;
+}

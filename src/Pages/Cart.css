@@ -1,0 +1,29 @@
+/* Cart.css */
+
+.container {
+    padding-top: 20px;
+}
+
+.cart.d-flex {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.cart.border {
+    border: 1px solid #ddd;
+}
+
+.cart.rounded {
+    border-radius: 5px;
+}
+
+.img-fluid {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #f6fa0f;
+    border: none;
+}

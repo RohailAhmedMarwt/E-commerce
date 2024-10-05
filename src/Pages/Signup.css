@@ -1,0 +1,98 @@
+/* Animation for form */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to form container */
+.form-container {
+  width: 100%;
+  max-width: 500px; /* Adjust based on your preference */
+  padding: 20px;
+  margin: auto; /* Center the form */
+  box-sizing: border-box;
+  border-radius: 10px; /* Rounded corners */
+  animation: fadeInUp 1s ease-out; /* Add fade-in and slide-up effect */
+}
+
+/* Animation for image */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply to image */
+.responsive-img {
+  width: 85%;
+  max-width: 500px; /* Limit maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  animation: slideInLeft 2s ease-out; /* Slide-in effect from left */
+}
+
+/* Styling for Signup Button */
+.btn-signup {
+  padding: 7px 30px; /* Custom padding */
+  border-radius: 7px; /* More rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.btn-warning {
+  color: #212529; /* Text color */
+  background-color: #ffc107; /* Yellow background */
+  border-color: #ffc107; /* Yellow border */
+}
+
+.btn-warning:hover {
+  color: #fff; /* White text color on hover */
+  background-color: #e0a800; /* Darker yellow background on hover */
+  border-color: #d39e00; /* Darker yellow border on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.btn-warning:focus, .btn-warning.focus {
+  color: #fff; /* White text color on focus */
+  background-color: #e0a800; /* Darker yellow background on focus */
+  border-color: #d39e00; /* Darker yellow border on focus */
+  box-shadow: 0 0 0 0.7rem rgba(255, 193, 7, 0.5); /* Shadow effect on focus */
+}
+
+.btn-warning.disabled, .btn-warning:disabled {
+  color: #212529; /* Text color */
+  background-color: #ffc107; /* Disabled background */
+  border-color: #ffc107; /* Disabled border */
+  cursor: allowed; /* Indicate disabled state */
+}
+
+/* Responsive image and form container adjustments */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px; /* Adjust padding on smaller screens */
+  }
+
+  .responsive-img {
+    max-width: 100%; /* Full width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+  
+
+  

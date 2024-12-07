@@ -14,7 +14,7 @@ const Signup = () => {
   const formData = { name, address, email, password, cellNumber };
   const submitForm = async () => {
     try {
-      await axios.post("http://localhost:8000/api/buyers/register", formData);
+      await axios.post("https://e-com-backend-weld.vercel.app/api/buyers/register", formData);
       alert("Buyer Registered successfully");
       navigate("/login");
     } catch (error) {
